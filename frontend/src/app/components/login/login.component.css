@@ -1,0 +1,45 @@
+.container {
+    height: 100%;
+    background: linear-gradient(80deg, rgba(106,153,157,1) 8%, rgba(0,107,255,0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 30rem;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+img {
+    height: 15rem;
+    width: 100%;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+button {
+    margin-top: 1.5rem;
+    height: 2rem;
+}
+
+.toast-success {
+    background-color: #51A351;
+  }
+
+mat-icon {
+    opacity: .6;
+}

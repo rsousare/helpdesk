@@ -1,0 +1,51 @@
+<div class="container mat-elevation-z8">
+    <form [formGroup]="clienteForm" (ngSubmit)="create()" class="form">
+
+        <h1 class="fullWidth">Criar Cliente</h1>
+        <img class="fullWidth" src="assets/img/tecnico-create.svg" alt="Helpdesk">
+
+        <section class="section">
+            <mat-checkbox (click)="addPerfil(0)" class="margin" color="primary">Admin</mat-checkbox>
+            <mat-checkbox (click)="addPerfil(1)" [checked]="true" class="margin" color="primary">Cliente</mat-checkbox>
+            <mat-checkbox (click)="addPerfil(2)" class="margin" color="primary">Cliente</mat-checkbox>
+          </section>
+
+          
+            <mat-form-field class="fullWidth" appearance="fill">
+              <mat-label>Nome</mat-label>
+              <input formControlName="nome" matInput placeholder="Nome Completo" maxlength="100">
+              <mat-icon matSuffix>badge</mat-icon>
+            </mat-form-field>
+          
+
+          
+            <mat-form-field class="fullWidth" appearance="fill">
+              <mat-label>CPF</mat-label>
+              <input formControlName="cpf" matInput placeholder="Ex: 000.000.000-00" mask="000.000.000-00">
+              <mat-icon matSuffix>pin</mat-icon>
+            </mat-form-field>
+          
+
+          
+            <mat-form-field class="fullWidth" appearance="fill">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" matInput placeholder="Ex: usuario@mail.com">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+          
+
+          
+            <mat-form-field class="fullWidth" appearance="fill">
+              <mat-label>Senha</mat-label>
+              <input formControlName="senha" type="password" matInput placeholder="Ex: 123">
+              <mat-icon matSuffix>password</mat-icon>
+            </mat-form-field>
+          
+
+          <button type="submit" [disabled]="!validaCampos()" class="fullWidth mat-elevation-z4" mat-flat-button>Gravar</button>
+          <button routerLink="../" class="fullWidth mat-elevation-z4" mat-stroked-button>Cancelar</button>
+
+           <p class="fullWidth">Criar Cliente</p> 
+
+    </form>
+</div>

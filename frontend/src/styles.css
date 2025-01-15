@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/ngx-toastr/toastr.css';  /*ou pode ser colocado no angular.json styles*/
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media (forced-colors: active) {
+  .example {
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+  .example:hover {
+    color: HighlightText;
+    background-color: Highlight;
+  }
+}
+
+
+@media (forced-colors: active) and (prefers-color-scheme: light) {
+  .example-light {
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+}
+
+@media (forced-colors: active) and (prefers-color-scheme: dark) {
+  .example-dark {
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+}
